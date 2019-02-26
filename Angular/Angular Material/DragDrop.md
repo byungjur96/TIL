@@ -90,7 +90,9 @@ CSS를 통해 preview 기능을 구현할 수 있다.
 
 preview 기능이란 컨텐츠를 drag할 때 drop할 위치에 가상으로 위치를 보여주는 기능이다.
 
-![](/Users/byungjuchae/Desktop/angular-7-drag-drop-example-custom-placeholder.gif)
+![](https://github.com/byungjur96/TIL/blob/master/Angular/Angular%20Material/angular-7-drag-drop-example-custom-placeholder.gif)
+
+
 
 위의 이미지에서 파란색 선이 나타나는 것을 preview 기능이라고 한다.
 
@@ -108,7 +110,7 @@ preview 기능을 구현하기 위해서는 CSS 파일에 아래 코드를 적�
 
 ---
 
-![](/Users/byungjuchae/Desktop/angular-7-drag-drop-example-transfer-lists-item.gif)
+![](https://github.com/byungjur96/TIL/blob/master/Angular/Angular%20Material/angular-7-drag-drop-example-transfer-lists-item.gif)
 
 두 개의 리스트 사이에서 리스트 내의 컨텐츠를 이동시킬 수 있다.
 
