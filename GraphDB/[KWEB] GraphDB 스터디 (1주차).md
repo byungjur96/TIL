@@ -6,17 +6,17 @@
 
 GraphDB란 RDF4J 프레임워크 기반의 RDF 데이터베이스입니다. RDF4J는 RDF 데이터를 저장하고, 쿼리를 날리고, 추리하는 Java 기반의 프레임워크입니다.  GraphDB *linked data cloud*를 다루는 데에 큰 장점이 있습니다. GraphDB는 W3C SPARQL Protocol을 준수하며, RDF 포멧을 지원합니다. 
 
-<img src="https://github.com/byungjur96/TIL/blob/master/GraphDB/img/starting_img.png">Start_img</img>
+<img src="https://github.com/byungjur96/TIL/blob/master/GraphDB/img/starting_img.png"></img>
 
 
 
 GraphDB를 통해서 데이터셋 내의 데이터 간의 관계를 다음과 같이 표시할 수 있습니다.
 
-<img src="https://github.com/byungjur96/TIL/blob/master/GraphDB/img/domain-range%20graph.png">domain-range graph</img>
+<img src="https://github.com/byungjur96/TIL/blob/master/GraphDB/img/domain-range%20graph.png"></img>
 
 
 
-참고 자료: [GraphDB란]("https://novemberde.github.io/database/2018/04/12/Neo4j.html"), [GraphDB Document]("http://graphdb.ontotext.com/documentation/free/about-graphdb.html")
+참고 자료: [GraphDB란](<https://novemberde.github.io/database/2018/04/12/Neo4j.html>), [GraphDB Document](<http://graphdb.ontotext.com/documentation/free/about-graphdb.html>)
 
 
 
@@ -35,7 +35,7 @@ GraphDB를 통해서 데이터셋 내의 데이터 간의 관계를 다음과 �
 
 
 
-참고 자료: [자원 기술 프레임워크]("https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9B%90_%EA%B8%B0%EC%88%A0_%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC"), [RDF 개념 및 소개]("https://www.slideshare.net/barambi/rdf")
+참고 자료: [자원 기술 프레임워크](<https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9B%90_%EA%B8%B0%EC%88%A0_%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC>), [RDF 개념 및 소개](<https://www.slideshare.net/barambi/rdf>)
 
 
 
@@ -47,7 +47,7 @@ GraphDB를 통해서 데이터셋 내의 데이터 간의 관계를 다음과 �
 
 
 
-참고자료: [SPARQL]("https://ko.wikipedia.org/wiki/SPARQL"), [Semantic Web SPARQL]("https://www.slideshare.net/mrumx/semantic-webweb-30-sparql")
+참고자료: [SPARQL](<https://ko.wikipedia.org/wiki/SPARQL>), [Semantic Web SPARQL](<https://www.slideshare.net/mrumx/semantic-webweb-30-sparql>)
 
 
 
@@ -155,10 +155,6 @@ Repository를 새로 만들거나, Repository의 설정을 변경할 때 이용�
 
 ##### 
 
-
-
-
-
 #### 활동계획
 
 ---
@@ -174,7 +170,7 @@ Repository를 새로 만들거나, Repository의 설정을 변경할 때 이용�
 - [ ] SPARQL 구문 공부
 - [ ] GraphDB GUI Interface 공부
 
-참고: [Apache Jena 문서]("http://jena.apache.org/tutorials/")
+참고: [Apache Jena 문서](<http://jena.apache.org/tutorials/>)
 
 
 
