@@ -6,13 +6,13 @@
 
 GraphDB란 RDF4J 프레임워크 기반의 RDF 데이터베이스입니다. RDF4J는 RDF 데이터를 저장하고, 쿼리를 날리고, 추리하는 Java 기반의 프레임워크입니다.  GraphDB *linked data cloud*를 다루는 데에 큰 장점이 있습니다. GraphDB는 W3C SPARQL Protocol을 준수하며, RDF 포멧을 지원합니다. 
 
-<img src="https://github.com/byungjur96/TIL/blob/master/GraphDB/img/starting_img.png" style="width:500px"></img>
+![](https://github.com/byungjur96/TIL/blob/master/GraphDB/img/starting_img.png)
 
 GraphDB를 통해서 데이터셋 내의 데이터 간의 관계를 다음과 같이 표시할 수 있습니다.
 
 <br>
 
-<img src="https://github.com/byungjur96/TIL/blob/master/GraphDB/img/domain-range%20graph.png"></img>
+![](https://github.com/byungjur96/TIL/blob/master/GraphDB/img/domain-range%20graph.png)
 
 <br>
 
@@ -59,7 +59,7 @@ GraphDB는 홈페이지에서 설치 파일을 다운 받아서 실행할 수 �
 
 설치 파일을 받아서 설치하면 프로그램 아이콘이 생성되고, `localhost: 7200` 에 GUI가 구현됩니다.
 
-<img src="https://github.com/byungjur96/TIL/blob/master/GraphDB/img/intro%20page.png" style="width:600px"></img>
+![](https://github.com/byungjur96/TIL/blob/master/GraphDB/img/intro%20page.png)
 
 <br>
 
@@ -69,11 +69,11 @@ GraphDB는 홈페이지에서 설치 파일을 다운 받아서 실행할 수 �
 
 <br>
 
-<img src="https://github.com/byungjur96/TIL/blob/master/GraphDB/img/repositories.png" style="width:600px"></img> 
+![](https://github.com/byungjur96/TIL/blob/master/GraphDB/img/repositories.png)
 
 2) 'Create New Repository' 버튼을 클릭합니다.
 
-<br><img src="https://github.com/byungjur96/TIL/blob/master/GraphDB/img/Create%20Repository.png" style="width:600px"></img>
+<br>![](https://github.com/byungjur96/TIL/blob/master/GraphDB/img/Create%20Repository.png)
 
 3) Repository 정보를 채워줍니다.
 
@@ -83,7 +83,7 @@ GraphDB는 홈페이지에서 설치 파일을 다운 받아서 실행할 수 �
 
 좌측 탭에서 'SPARQL' 탭을 클릭한 후, 화면 가운데 코드 에디터 부분에 SPARQL 문을 입력해서 실행해 줍니다.
 
-<img src="https://github.com/byungjur96/TIL/blob/master/GraphDB/img/sparql.png" style="width:600px"></img>
+![](https://github.com/byungjur96/TIL/blob/master/GraphDB/img/sparql.png")
 
 <br>
 
@@ -99,13 +99,13 @@ dataset을 불러오는 방법에는 2가지가 있습니다. 우선 RDF 파일�
 
 GraphDB를 실행시켰을 때 초기 화면은 다음과 같습니다.
 
-<img src="https://github.com/byungjur96/TIL/blob/master/GraphDB/img/program%20page.png" style="width:600px"></img>
+![](https://github.com/byungjur96/TIL/blob/master/GraphDB/img/program%20page.png)
 
 <br>
 
 또한 `http://localhost:7200` 로 접속하면 다음과 같은 화면을 볼 수 있습니다.
 
-<img src="https://github.com/byungjur96/TIL/blob/master/GraphDB/img/intro%20page.png" style="width:600px"></img>
+![](https://github.com/byungjur96/TIL/blob/master/GraphDB/img/intro%20page.png)
 
 <br>
 
@@ -115,9 +115,9 @@ GraphDB를 실행시켰을 때 초기 화면은 다음과 같습니다.
 
 #### 1) import
 
-<img src="https://github.com/byungjur96/TIL/blob/master/GraphDB/img/import%20rdf.png" style="width:400px; display:inline-block"></img>
+![](https://github.com/byungjur96/TIL/blob/master/GraphDB/img/import%20rdf.png")
 
-<img src="https://github.com/byungjur96/TIL/blob/master/GraphDB/img/import%20tabular.png" style="width:400px; display:inline-block"></img>
+![](https://github.com/byungjur96/TIL/blob/master/GraphDB/img/import%20tabular.png)
 
 데이터를 GraphDB에 넣는 탭입니다. RDF 파일을 직접 넣어주거나, Tabular라고 다른 포멧의 파일을 변환해서 넣어줄 수 있습니다.
 
@@ -131,7 +131,7 @@ GraphDB를 실행시켰을 때 초기 화면은 다음과 같습니다.
 
 #### 3) SPARQL
 
-<img src="https://github.com/byungjur96/TIL/blob/master/GraphDB/img/sparql.png" style="width:600px"></img>
+![](https://github.com/byungjur96/TIL/blob/master/GraphDB/img/sparql.png)
 
 SPARQL query문을 입력하는 탭입니다. SPARQL query문을 입력하여 원하는 결과만을 확인해 볼 수 있습니다.
 
@@ -139,7 +139,7 @@ SPARQL query문을 입력하는 탭입니다. SPARQL query문을 입력하여 �
 
 #### 4) Monitor
 
-<img src="https://github.com/byungjur96/TIL/blob/master/GraphDB/img/monitor.png" style="width:600px"></img>
+![](https://github.com/byungjur96/TIL/blob/master/GraphDB/img/monitor.png)
 
 새로 추가된 Qeury나 실행 중인 Query를 확인하는 탭입니다. 추가로 Memory 사용량, Threads, CPU 로드량 등을 확인할 수 있습니다.
 
@@ -147,7 +147,7 @@ SPARQL query문을 입력하는 탭입니다. SPARQL query문을 입력하여 �
 
 #### 5) Setup
 
-<img src="https://github.com/byungjur96/TIL/blob/master/GraphDB/img/setup.png" style="width:600px"></img>
+![](https://github.com/byungjur96/TIL/blob/master/GraphDB/img/setup.png)
 
 Repository를 새로 만들거나, Repository의 설정을 변경할 때 이용하는 탭입니다. 그 외에도 Repository에 대한 접근 권한 등을 수정 및 추가할 수 있습니다.
 
