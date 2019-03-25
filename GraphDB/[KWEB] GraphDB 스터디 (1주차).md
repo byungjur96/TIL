@@ -1,6 +1,6 @@
 ## [KWEB] GraphDB 스터디 (1주차)
 
-#### GraphDB란?
+### GraphDB란?
 
 ---
 
@@ -8,9 +8,9 @@ GraphDB란 RDF4J 프레임워크 기반의 RDF 데이터베이스입니다. RDF4
 
 <img src="https://github.com/byungjur96/TIL/blob/master/GraphDB/img/starting_img.png" style="width:500px"></img>
 
-<br>
-
 GraphDB를 통해서 데이터셋 내의 데이터 간의 관계를 다음과 같이 표시할 수 있습니다.
+
+<br>
 
 <img src="https://github.com/byungjur96/TIL/blob/master/GraphDB/img/domain-range%20graph.png"></img>
 
@@ -20,7 +20,7 @@ GraphDB를 통해서 데이터셋 내의 데이터 간의 관계를 다음과 �
 
 <br>
 
-#### RDF란?
+### RDF란?
 
 ---
 
@@ -39,7 +39,7 @@ GraphDB를 통해서 데이터셋 내의 데이터 간의 관계를 다음과 �
 
 <br>
 
-#### SPARQL이란?
+### SPARQL이란?
 
 ---
 
@@ -51,7 +51,7 @@ GraphDB를 통해서 데이터셋 내의 데이터 간의 관계를 다음과 �
 
 <br>
 
-#### GraphDB 설치 과정
+### GraphDB 설치 과정
 
 ---
 
@@ -63,7 +63,7 @@ GraphDB는 홈페이지에서 설치 파일을 다운 받아서 실행할 수 �
 
 <br>
 
-##### 1. repository 만들기
+#### 1. repository 만들기
 
 1) 좌측 탭에서 'setup'을 클릭한 후 'Repository'를 선택합니다.
 
@@ -79,7 +79,7 @@ GraphDB는 홈페이지에서 설치 파일을 다운 받아서 실행할 수 �
 
 <br>
 
-##### 2. SPARQL 실행하기
+#### 2. SPARQL 실행하기
 
 좌측 탭에서 'SPARQL' 탭을 클릭한 후, 화면 가운데 코드 에디터 부분에 SPARQL 문을 입력해서 실행해 줍니다.
 
@@ -87,13 +87,13 @@ GraphDB는 홈페이지에서 설치 파일을 다운 받아서 실행할 수 �
 
 <br>
 
-##### 3. dataset 불러오기
+#### 3. dataset 불러오기
 
 dataset을 불러오는 방법에는 2가지가 있습니다. 우선 RDF 파일을 직접 import하는 방법이 있습니다. 또 다른 방법으로는 OntoRefine 탭을 통해서 데이터를 RDF 파일로 변환하는 방법이 있습니다. TSV, CSV, *SV, Excel, JSON, XML, Google Sheet 등의 포멧을 RDF 파일로 변환해줍니다.
 
 <br>
 
-#### GraphDB GUI Interface
+### GraphDB GUI Interface
 
 ---
 
@@ -113,7 +113,7 @@ GraphDB를 실행시켰을 때 초기 화면은 다음과 같습니다.
 
 <br>
 
-##### 1) import
+#### 1) import
 
 <img src="https://github.com/byungjur96/TIL/blob/master/GraphDB/img/import%20rdf.png" style="width:400px; display:inline-block"></img>
 
@@ -123,13 +123,13 @@ GraphDB를 실행시켰을 때 초기 화면은 다음과 같습니다.
 
 <br>
 
-##### 2) Explore
+#### 2) Explore
 
 데이터를 다양한 방법으로 보여주는 탭입니다. 하위 메뉴로는 'Graphs Overview', 'Class Hierarchy', 'Class Relationships', 'Visual Graph', 'Similarity' 5개가 있습니다. GRaphDB의 메인 기능들이 모두 포함되어 있습니다.
 
 <br>
 
-##### 3) SPARQL
+#### 3) SPARQL
 
 <img src="https://github.com/byungjur96/TIL/blob/master/GraphDB/img/sparql.png" style="width:600px"></img>
 
@@ -137,7 +137,7 @@ SPARQL query문을 입력하는 탭입니다. SPARQL query문을 입력하여 �
 
 <br>
 
-##### 4) Monitor
+#### 4) Monitor
 
 <img src="https://github.com/byungjur96/TIL/blob/master/GraphDB/img/monitor.png" style="width:600px"></img>
 
@@ -145,23 +145,23 @@ SPARQL query문을 입력하는 탭입니다. SPARQL query문을 입력하여 �
 
 <br>
 
-##### 5) Setup
+#### 5) Setup
 
 <img src="https://github.com/byungjur96/TIL/blob/master/GraphDB/img/setup.png" style="width:600px"></img>
 
 Repository를 새로 만들거나, Repository의 설정을 변경할 때 이용하는 탭입니다. 그 외에도 Repository에 대한 접근 권한 등을 수정 및 추가할 수 있습니다.
 
-#####<br>
+<br>
 
-#### 활동계획
+### 활동계획
 
 ---
 
-##### 목표: 메뉴와 위치를 기반으로 맛집 리스트를 구조화하기
+#### 목표: 메뉴와 위치를 기반으로 맛집 리스트를 구조화하기
 
 <br>
 
-##### <~중간 고사>
+#### <~중간 고사>
 
 - [ ] RDF 구조 공부
 
@@ -170,9 +170,9 @@ Repository를 새로 만들거나, Repository의 설정을 변경할 때 이용�
 
 참고: [Apache Jena 문서](<http://jena.apache.org/tutorials/>)
 
+<br>
 
-
-##### <~ 기말 고사>
+#### <~기말 고사>
 
 - [ ] 기존에 가지고 있던 정보 RDF 구조로 만들기
 - [ ] GraphDB를 이용해서 다양한 Visual Graph 그려보기 및 SPARQL 구문 심화 공부
