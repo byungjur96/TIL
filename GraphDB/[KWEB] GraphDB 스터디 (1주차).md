@@ -35,7 +35,7 @@ GraphDB를 통해서 데이터셋 내의 데이터 간의 관계를 다음과 �
 
 <br>
 
-참고 자료: [자원 기술 프레임워크](<https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9B%90_%EA%B8%B0%EC%88%A0_%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC>), [RDF 개념 및 소개](<https://www.slideshare.net/barambi/rdf>)
+참고 자료: [자원 기술 프레임워크](<https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9B%90_%EA%B8%B0%EC%88%A0_%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC>), [RDF 개념 및 소개](<https://www.slideshare.net/barambi/rdf>), [RDF vs XML](<https://www.w3.org/DesignIssues/RDF-XML.html>)
 
 <br>
 
@@ -43,7 +43,22 @@ GraphDB를 통해서 데이터셋 내의 데이터 간의 관계를 다음과 �
 
 ---
 
-**SPARQL**(Simple Protocol And RDF Query Language)이란 W3C에서 만든, RDF 질의어입니다. RDB에서 SQL이 하는 역할을 RDF에서는 SPARQL이 합니다. RDF는 웹 상에서 표현될 수 있는 개념들의 관계를 기술하는 역할을 한다면, SPARQL은 그 개념들 간의 질의(query) 처리가 가능할 수 있도록 해줍니다. SPARQL은 Semantic Web(Web 3.0)의 주요 기술 중 하나로 지목되고 있습니다.
+**SPARQL**(Simple Protocol And RDF Query Language)이란 W3C에서 만든, RDF 질의어입니다. RDB에서 SQL이 하는 역할을 RDF에서는 SPARQL이 합니다. RDF는 웹 상에서 표현될 수 있는 개념들의 관계를 기술하는 역할을 한다면, SPARQL은 그 개념들 간의 질의(query) 처리가 가능할 수 있도록 해줍니다. SPARQL은 Semantic Web(Web 3.0)의 주요 기술 중 하나로 지목되고 있습니다. 아래는 '아프리카의 모든 국가 수도는?'이라는 질문의 SPARQL 쿼리 예제입니다.
+
+```SPARQL
+PREFIX ex: <http://example.com/exampleOntology#>
+SELECT ?capital
+       ?country
+WHERE
+  {
+    ?x  ex:cityname       ?capital   ;
+        ex:isCapitalOf    ?y         .
+    ?y  ex:countryname    ?country   ;
+        ex:isInContinent  ex:Africa  .
+  }
+```
+
+
 
 <br>
 
