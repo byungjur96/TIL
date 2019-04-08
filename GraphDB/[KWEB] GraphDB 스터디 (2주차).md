@@ -77,7 +77,7 @@ INSERT DATA {
 
 
 
-SPARQL은 SQL과 다르게 schema가 반드시 필요하지는 않습니다.
+SPARQL은 SQL과 다르게 schema[^1]가 반드시 필요하지는 않습니다.
 
 
 
