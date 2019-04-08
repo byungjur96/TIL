@@ -1,15 +1,5 @@
 ## [KWEB] GraphDB 스터디 (2주차)
 
-#### RDF와 xml의 차이
-
----
-
-```xml
-triple(author, page, Ora)
-```
-
-
-
 #### RDF(Resource Data Framework)
 
 ---
