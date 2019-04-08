@@ -34,6 +34,17 @@ SPARQL은 RDF 그래프를 위한 Query Language입니다. SPARQL에서 사용�
 
 `SELECT`: tabular 결과를 return합니다.
 
+```SPARQL
+PREFIX: <http://bedrock/>
+SELECT ?grandChild
+WHERE {
+  :fred :hasChild ?child .
+  ?child :hasChild ?grandChild
+}
+```
+
+
+
 `WHERE`: SQL의 `WHERE` 과 거의 동일합니다. 조건, 제약, 필터링을 정의합니다. 아래의 예시와 같은 방법으로 사용할 수 있습니다.
 
 ```SPARQL
@@ -45,6 +56,15 @@ WHERE {?subject ?predicate ?object}
 `CONSTRUCT`: query 결과를 바탕으로 새로운 RDF Graph를 만듭니다.
 
 `ASK`: query 결과가 존재하는 지 여부를 return합니다. 'yes' 또는 'no'를 반환합니다.
+
+```SPARQL
+PREFIX: <http://bedrock/>
+ASK
+WHERE {
+  :fred :hasChild ?child .
+  ?child :hasChild ?grandChild
+}
+```
 
 `DESCRIBE`: resource에 대한 RDF 그래프의 데이터를 return합니다.
 
