@@ -61,7 +61,7 @@ WHERE {?subject ?predicate ?object}
 PREFIX: <http://bedrock/>
 ASK
 WHERE {
-  :fred :hasChild ?child .
+  :fred :hasChild ?child
   ?child :hasChild ?grandChild
 }
 ```
