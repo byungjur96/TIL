@@ -18,9 +18,14 @@
 
 ```python
 string = '  example  '
-print(string.strip()) # 'example'이 출력된다.
+print(string.strip())  # 'example'이 출력된다.
 ```
 
  추가로 `strip()` 함수는 1개의 *string argument* 를 받을 수 있다.
 
 argument를 넣어준 경우, 문자열의 앞과 뒤에 해당 substring이 존재하는 경우 해당 substring을 제거해준다.
+
+```python
+print('abkdlfjwkelab'.strip('ab'))  # 'kdlfjwkel'이 출력된다.
+```
+
