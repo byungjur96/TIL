@@ -1,6 +1,6 @@
 ## 유용한 Python 함수 모음
 
-#### strip() 함수
+#### strip()
 
 ---
 
@@ -29,3 +29,36 @@ argument를 넣어준 경우, 문자열의 앞과 뒤에 해당 substring이 존
 print('abkdlfjwkelab'.strip('ab'))  # 'kdlfjwkel'이 출력된다.
 ```
 
+
+
+#### format()
+
+---
+
+`format()` 은 변수와 string이 섞여 있을 때 매우 유용한 함수이다.
+
+'test1234'라는 string을 출력할 때 test라는 값이 변수 `a` 에 저장되어 있는 경우, 보통 아래와 같은 방법을 이용해왔다.
+
+```python
+a = 'test'
+print(a+'1234')
+```
+
+이때 변수와 string이 여러개 나올 경우 굉장히 식이 길고 복잡해진다.
+
+이 때 `format()`  을 이용하면 한 줄로 쉽게 표현할 수 있다.
+
+```python
+a = 'test'
+print('{0}1234'.format(a))
+```
+
+변수가 들어갈 자리를 {}로 감싸주고, 안에 숫자를 0부터 넣어준다.
+
+그리고 숫자의 위치에 대입할 변수의 이름을 `format` 뒤의 괄호 안에 넣어준다.
+
+이 함수를 이용하면 하나의 변수가 여러 번 나올 때나, 변수와 string이 여러 개 반복되어 나올 때 유용하게 사용할 수 있다.
+
+
+
+참고자료: https://stackoverflow.com/questions/2960772/how-do-i-put-a-variable-inside-a-string
