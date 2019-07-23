@@ -62,3 +62,21 @@ print('{0}1234'.format(a))
 
 
 참고자료: https://stackoverflow.com/questions/2960772/how-do-i-put-a-variable-inside-a-string
+
+
+
+#### readline()
+
+------
+
+알고리즘 문제 풀이 중에 `input()` 함수를 사용했는데 시간 초과가 발생해서 찾아보다가 알게 된 함수이다.
+
+`import sys` 를 한 후에 아래의 함수를 `input()` 대신 사용하면 시간 초과 없이 문제를 풀 수 있었다.
+
+```
+sys.stdin.readline().rstrip()
+```
+
+
+
+참고자료: https://www.acmicpc.net/board/view/10853
