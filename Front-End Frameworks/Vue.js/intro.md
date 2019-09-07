@@ -21,14 +21,14 @@
 
 
 
-#### Vue 프로젝트 템플릿
+#### Vue 프로젝트 탬플릿
 
-- Simple: 단일 HTML 파일 (CDN 방식)
-- Browserify: Browserify + Vueify 조합. 대규모 애플리케이션 개발용.
-- Browserify-simple: 빠른 프로토타이핑용.
-- Webpack: Webpack + Vue-Loader 조합. hot-reload, linting, 단위 테스트 기능을 제공.
-- Webpack-Simple: 빠른 프로토타이핑용.
-- PWA:  PWA를 위한 라이브러리가 추가되어 있음.
+- `Simple` : 단일 HTML 파일 (CDN 방식)
+- `Browserify` : Browserify + Vueify 조합. 대규모 애플리케이션 개발용.
+- `Browserify-simple` : 빠른 프로토타이핑용.
+- `Webpack` : Webpack + Vue-Loader 조합. hot-reload, linting, 단위 테스트 기능을 제공.
+- `Webpack-Simple` : 빠른 프로토타이핑용.
+- `PWA` :  PWA를 위한 라이브러리가 추가되어 있음.
 
 
 
