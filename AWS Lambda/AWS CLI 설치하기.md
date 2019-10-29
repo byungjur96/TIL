@@ -1,4 +1,4 @@
-## AWS CLU 설치하기
+## AWS CLI 설치하기
 
 
 
