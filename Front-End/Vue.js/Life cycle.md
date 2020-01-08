@@ -6,7 +6,7 @@ Vue.js의 라이프 사이클은 크게 Creation, Mounting, Updating, Destructio
 
 아래의 이미지는 Vue.js의 라이프 사이클을 나타낸 것이다.
 
-![](https://github.com/byungjur96/TIL/blob/master/Front-End Frameworks/Vue.js/vue_LifeCycle.png)
+![](https://github.com/byungjur96/TIL/blob/master/Front-End/Vue.js/vue_LifeCycle.png)
 
 
 
