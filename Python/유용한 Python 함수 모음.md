@@ -80,3 +80,22 @@ sys.stdin.readline().rstrip()
 
 
 참고자료: https://www.acmicpc.net/board/view/10853
+
+
+
+#### 소수점 출력
+
+---
+
+```
+print('%.3f' % var)
+```
+
+
+
+#### String으로 함수 호출하기
+
+---
+
+`eval()` 함수를 사용하면 `eval()` 의 parameter와 같은 이름의 함수를 호출할 수 있다.
+
