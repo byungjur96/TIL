@@ -99,3 +99,51 @@ print('%.3f' % var)
 
 `eval()` 함수를 사용하면 `eval()` 의 parameter와 같은 이름의 함수를 호출할 수 있다.
 
+
+
+#### Deep Copy
+
+---
+
+ 일반적으로 파이썬에서 `a=b` 와 같은 식으로 list를 할당해주었을 때, `b` 가 mutable한 객체라면, `a` 의 값을 변경해주면 `b` 의 값도 변경됩니다. 이런 방법을 얕은 복사( *Shallow Copy* )라고 합니다. `a` 와 `b` 는 다른 주소를 가리키지만, 그 내부의 객체(ex. `a[0]`, `b[0]`) 는 같은 주소를 바라보고 있습니다. `a=b[:]` 와 같은 할당 역시 Shallow Copy 입니다. `copy` 모듈의 `copy` 메소드 또한 얕은 복사입니다.
+
+```python
+import copy
+a = [[1, 2], [3, 4]]
+
+b1 = a
+b2 = a[:]
+b3 = copy.copy(a)
+
+a[1].append(5)
+
+print(a)  # [[1, 2], [3, 4, 5]]
+print(b1)  # [[1, 2], [3, 4, 5]]
+print(b2)  # [[1, 2], [3, 4, 5]]
+print(b3)  # [[1, 2], [3, 4, 5]]
+
+print(a is b1)  # True
+print(a is b2)  # False
+print(a is b3)  # False
+
+print(a[0] is b1[0])  # True
+print(a[0] is b2[0])  # True
+print(a[0] is b3[0])  # True
+```
+
+
+
+ 깊은 복사( *deep copy* )를 사용하기 위해서는 `copy` 모듈의 `deepcopy` 메소드를 사용해야 합니다.
+
+```python
+import copy
+a = [[1, 2], [3, 4]]
+b = copy.deepcopy(a)
+a[1].append(5)
+
+print(a)  # [[1, 2], [3, 4, 5]]
+print(b)  # [[1, 2], [3, 4]]
+```
+
+
+
