@@ -8,17 +8,17 @@
 
    GCP 콘솔 안에서 상단에 프로젝트를 선택하여 새 프로젝트를 생성한다.
 
-   ![](https://user-images.githubusercontent.com/29116445/84215424-27d7ea00-ab01-11ea-8e1e-59ff8d811bca.png)
+   ![](https://user-images.githubusercontent.com/29116445/84217382-f6fab380-ab06-11ea-97cf-33de3fba4a4c.png)
 
 2. **Instance 만들기**
 
    프로젝트를 생성하고 나면 이후 좌측의 메뉴탭을 눌러서 'Compute Engine' 탭의 'VM 인스턴스'를 클릭한다.
 
-   <img src="https://user-images.githubusercontent.com/29116445/84215420-23abcc80-ab01-11ea-9ba5-5871dfaef614.png" style="zoom:50%;" />
+   <img src="https://user-images.githubusercontent.com/29116445/84217376-f3ffc300-ab06-11ea-8800-e7f4f8639609.png" style="zoom:50%;" />
 
    이후 인스턴스 만들기를 클릭하여 새로운 VM 인스턴스를 만든다.
 
-   ![](https://user-images.githubusercontent.com/29116445/84215426-29091700-ab01-11ea-8823-9c5d8a2219de.png)
+   ![](https://user-images.githubusercontent.com/29116445/84217383-f7934a00-ab06-11ea-93b1-c7ee7e3995d0.png)
 
    이때 이름을 설정해주고, 예산에 맞게 CPU를 설정해준다.
 
@@ -29,6 +29,26 @@
 3. **GPU 할당 받기**
 
    기본적으로 GCP 내에서 유저가 사용할 수 있는 GPU의 개수는 0개이다. 따라서 신청을 해서 GPU를 할당받아야 한다.
+
+   GCP 좌측 메뉴 버튼을 눌러서 'IAM 및 관리자'의 '할당량'으로 들어간다.
+
+   ![](https://user-images.githubusercontent.com/29116445/84217389-f95d0d80-ab06-11ea-92e2-590535f84e81.png)
+
+   할당량에 들어가서 측정항목을 'GPUs(all regions)'로, 위치를 '글로벌'로 설정한다.
+
+   ![](https://user-images.githubusercontent.com/29116445/84217390-f95d0d80-ab06-11ea-90c7-64eb9e75814f.png)
+
+   ⚠️ 위치를 글로벌로 설정해주지 않은 경우 알 수 없는 에러가 발생했음.
+
+   서비스를 체크해준 후에 위의 '할당량 수정'을 클릭하여 한도를 1로 올려서 신청을 한다.
+
+   ⚠️ 2개 이상을 신청하는 경우 알 수 없는 이유로 거절한다.
+
+   신청을 하고나면 얼마 지나지 않아서 아래와 같은 내용의 메일을 받을 수 있다.
+
+   ![](https://user-images.githubusercontent.com/29116445/84217388-f8c47700-ab06-11ea-975c-a43215ea7454.png)
+
+   이 메일을 받으면 GPU 할당이 완료된 것이며 Instance 생성 후 GPU를 할당해주면 된다.
 
 
 
@@ -46,7 +66,7 @@
 
 2. **VM Instance에 SSH 키 추가**
 
-   ![](https://user-images.githubusercontent.com/29116445/84215428-2ad2da80-ab01-11ea-9f36-13ce88230064.png)
+   ![](https://user-images.githubusercontent.com/29116445/84217385-f82be080-ab06-11ea-8671-d86cceed6a1f.png)
 
    이후 RSA Key Pair의 내용을 GCP VM Instance의 메타 데이터의 SSH키에 복사한다.
 
@@ -80,5 +100,5 @@ ssh-keygen -R <IP name>
 
 
 
-참고자료: [GCP에서 GPU 할당받고 우분투 가상환경 실행](https://turtlefromocean.tistory.com/3), [생성된 GCP를 SSH로 접속하기](https://ruuci.tistory.com/6), [SSH 접속시 RSA 공유키 충돌 문제 해결]("https://cpuu.postype.com/post/30065")
+참고자료: [GCP에서 GPU 할당받고 우분투 가상환경 실행](https://turtlefromocean.tistory.com/3), [생성된 GCP를 SSH로 접속하기](https://ruuci.tistory.com/6), [SSH 접속시 RSA 공유키 충돌 문제 해결]("https://cpuu.postype.com/post/30065"), [GCP error: Quota 'GPUS_ALL_REGIONS' exceeded. Limit: 0.0 globally](https://stackoverflow.com/questions/53415180/gcp-error-quota-gpus-all-regions-exceeded-limit-0-0-globally) 
 
