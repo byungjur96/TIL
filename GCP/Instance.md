@@ -14,7 +14,7 @@
 
    프로젝트를 생성하고 나면 이후 좌측의 메뉴탭을 눌러서 'Compute Engine' 탭의 'VM 인스턴스'를 클릭한다.
 
-   <img src="https://user-images.githubusercontent.com/29116445/84217376-f3ffc300-ab06-11ea-8800-e7f4f8639609.png" style="zoom: 25%;" />![](https://user-images.githubusercontent.com/29116445/84217389-f95d0d80-ab06-11ea-92e2-590535f84e81.png)
+   ![]("https://user-images.githubusercontent.com/29116445/84217376-f3ffc300-ab06-11ea-8800-e7f4f8639609.png"){: width="25%" height="25%"}
 
    이후 인스턴스 만들기를 클릭하여 새로운 VM 인스턴스를 만든다.
 
@@ -32,7 +32,7 @@
 
    GCP 좌측 메뉴 버튼을 눌러서 'IAM 및 관리자'의 '할당량'으로 들어간다.
 
-   ![](https://user-images.githubusercontent.com/29116445/84217389-f95d0d80-ab06-11ea-92e2-590535f84e81.png)
+   ![](https://user-images.githubusercontent.com/29116445/84217389-f95d0d80-ab06-11ea-92e2-590535f84e81.png){: width="25%" height="25%"}
 
    할당량에 들어가서 측정항목을 'GPUs(all regions)'로, 위치를 '글로벌'로 설정한다.
 
