@@ -46,7 +46,7 @@
 
    신청을 하고나면 얼마 지나지 않아서 아래와 같은 내용의 메일을 받을 수 있다.
 
-   <img src="https://user-images.githubusercontent.com/29116445/84217388-f8c47700-ab06-11ea-975c-a43215ea7454.png" style="zoom:50%;" />
+   <img src="https://user-images.githubusercontent.com/29116445/84217388-f8c47700-ab06-11ea-975c-a43215ea7454.png" style="zoom:30%;" />
 
    이 메일을 받으면 GPU 할당이 완료된 것이며 Instance 생성 후 GPU를 할당해주면 된다.
 
@@ -87,7 +87,9 @@
 하나의 RSA 공유키로 다른 서버에 접속하려고 하면 아래와 같은 에러 메세지가 출력된다.
 
 ```bash
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ @ WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED! @ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
+@ WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED! @ 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 ```
 
 이런 메세지가 뜨는 이유는 기존에 접속한 적 있는 서버와 RSA 공유키를 교환한 상태에서 해당 서버가 바뀌었기 때문이다. 이 메세지는 '중간자 공격'에 대한 경고를 한다.
@@ -100,5 +102,5 @@ ssh-keygen -R <IP name>
 
 
 
-참고자료: [GCP에서 GPU 할당받고 우분투 가상환경 실행](https://turtlefromocean.tistory.com/3), [생성된 GCP를 SSH로 접속하기](https://ruuci.tistory.com/6), [SSH 접속시 RSA 공유키 충돌 문제 해결]("https://cpuu.postype.com/post/30065"), [GCP error: Quota 'GPUS_ALL_REGIONS' exceeded. Limit: 0.0 globally](https://stackoverflow.com/questions/53415180/gcp-error-quota-gpus-all-regions-exceeded-limit-0-0-globally) 
+참고자료: [GCP에서 GPU 할당받고 우분투 가상환경 실행](https://turtlefromocean.tistory.com/3) , [생성된 GCP를 SSH로 접속하기](https://ruuci.tistory.com/6) , [SSH 접속시 RSA 공유키 충돌 문제 해결]("https://cpuu.postype.com/post/30065") , [GCP error: Quota 'GPUS_ALL_REGIONS' exceeded. Limit: 0.0 globally](https://stackoverflow.com/questions/53415180/gcp-error-quota-gpus-all-regions-exceeded-limit-0-0-globally) 
 
