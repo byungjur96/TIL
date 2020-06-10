@@ -14,7 +14,7 @@
 
    프로젝트를 생성하고 나면 이후 좌측의 메뉴탭을 눌러서 'Compute Engine' 탭의 'VM 인스턴스'를 클릭한다.
 
-   <img src="https://user-images.githubusercontent.com/29116445/84217376-f3ffc300-ab06-11ea-8800-e7f4f8639609.png" style="zoom:50%;" />
+   <img src="https://user-images.githubusercontent.com/29116445/84217376-f3ffc300-ab06-11ea-8800-e7f4f8639609.png" style="zoom: 25%;" />![](https://user-images.githubusercontent.com/29116445/84217389-f95d0d80-ab06-11ea-92e2-590535f84e81.png)
 
    이후 인스턴스 만들기를 클릭하여 새로운 VM 인스턴스를 만든다.
 
@@ -46,7 +46,7 @@
 
    신청을 하고나면 얼마 지나지 않아서 아래와 같은 내용의 메일을 받을 수 있다.
 
-   ![](https://user-images.githubusercontent.com/29116445/84217388-f8c47700-ab06-11ea-975c-a43215ea7454.png)
+   <img src="https://user-images.githubusercontent.com/29116445/84217388-f8c47700-ab06-11ea-975c-a43215ea7454.png" style="zoom:50%;" />
 
    이 메일을 받으면 GPU 할당이 완료된 것이며 Instance 생성 후 GPU를 할당해주면 된다.
 
